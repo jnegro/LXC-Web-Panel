@@ -62,9 +62,9 @@ try:
         LDAP_BASE = config.get('ldap', 'base')
         LDAP_BIND_DN = config.get('ldap', 'bind_dn')
         LDAP_PASS = config.get('ldap', 'password')
-	ID_MAPPING = config.get('ldap','id_mapping')
-	DISPLAY_MAPPING = config.get('ldap','display_mapping')
-	OBJECT_CLASS = config.get('ldap','object_class')
+        ID_MAPPING = config.get('ldap','id_mapping')
+        DISPLAY_MAPPING = config.get('ldap','display_mapping')
+        OBJECT_CLASS = config.get('ldap','object_class')
 except NameError as err:
     print ' ! Revert to DB authentication ' + err
     AUTH = 'database'
